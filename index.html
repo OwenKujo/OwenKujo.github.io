@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OwenKujo Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/31e88c46a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Logo web.png" alt="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#myproject">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="headertext">
+            <p>Interested in Data Science</p>
+            <h1>Hello, I'm Rapeepat Promlat<br> from Thailand<br>You can call me<span> Owen</span></h1>
+        </div>
+    </div>
+</div>
+<!--about-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about1">
+                <img src="images/mypic1.png">
+            </div>
+            <div class="about2">
+                <h1 class="sub">My Information</h1>
+                <p>
+                    I'm Owen.I was born in 26th September 2005 at Bangkok, Thailand.
+                    Studied in english program really makes me be me today because of English always be
+                    my passion since I was a kid.Now I'm learning data science and web developing.
+                    Sports is my other big passion too so I want to tell every people on the planet that
+                    whatever your job is you should exercise it just give you uncountable benefits. Thank you for
+                    reading I hope this helps you know me better.
+                </p>
+                <div class="tab-tittles">
+                    <p class="tablinks activelink" onclick="opentab('skills')">Skills</p>  
+                    <p class="tablinks" onclick="opentab('activities')">Activities</p>
+                    <p class="tablinks" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tabcontents activetab" id="skills">
+                    <ul>
+                        <li><span>Python</span><br> Data Science, Machine Learning</li>
+                        <li><span>Web Development</span><br> Front - End Design</li>
+                        <li><span>Other Programming Languages</span><br>C, Java, SQL</li>
+                        <li><span>Video Editing</span><br>Adobe Premier Pro</li>
+                    </ul>
+                </div>
+                <div class="tabcontents" id="activities">
+                    <ul>
+                        <li><span>CS Camp 14 by CS KMITL(Online)</span><br>Computer Science knowledge
+                            <br>Learned Java and build small project </li>
+                        <li><span>ToBeIT 66 by IT KMITL(Onsite)</span><br> Tech industry knowledge
+                            <br>Build website and Machine Learning project</li>
+                        <li><span>Welcome to Computer Science
+                        (Data Analytic) Batch2</span><br>Learn about Data Analytics career</li>
+                        <li><span>Basic AI Gen1 by NANG DEV </span>
+                            <br>Build my first AI and learn how important is AI</li>
+                    </ul>
+                </div>
+                <div class="tabcontents" id="education">
+                    <ul>
+                        <li><span>Kindergarten</span><br> Denla Rama V School</li>
+                        <li><span>Primary School</span><br>Anurajaprasit School(English Program) </li>
+                        <li><span>Junior High School</span><br>Nonthaburi Wittayalai School(Eng-Jap Promgram)</li>
+                        <li><span>Senior High School</span><br>Watkhemapirataram School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------------my project----------------->
+
+<div id="myproject">
+    <div class="container">
+        <h1 class="sub">My Projects</h1>
+        <div class="myprojects">
+            <div class="project">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Data Visualize Of <br>My Favourite Music</h3>
+                    <p>Data Visualize from the data that I collected in
+                        my own Spotify playlist.Find who's my favourite artist.
+                        What kind of music that I like and other statistics.
+                    </p>
+                    <a href="https://github.com/OwenKujo/PythonD1"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Machine Learning To Predict <br>The Football Match</h3>
+                    <p>I collected the data by web scraping a football statistics website
+                        and use them in machine learning to predict the football match.
+                    </p>
+                    <a href="https://github.com/OwenKujo/footballmatchpredict"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/OwenKujo" class="btn">Discover more</a>   
+    </div>
+</div>
+<!-----------------------contact section----------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contactleft">
+                <h1 class="sub">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>owenrapeepat@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>080-938-1062</p>
+                <div class="socialmedia">
+                    <a href="https://www.facebook.com/profile.php?id=100002343503711"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com/owenkujo/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCCUwIPX8MnLPpcOumvB-Hjg"><i class="fa-brands fa-square-youtube"></i></a>
+                    <a href="https://twitter.com/kujonosuke"><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
+                <a href="images/Copy of Copy of Owen.pdf" download class="btn btn2" >Download CV</a>
+            </div>
+            <div class="contactright">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <textarea name="Massage" rows="6" placeholder="Massage"></textarea>
+                    <button type="submit" class="btn btn2">SUBMIT</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2022 Rapeepat Promlat All Rights Reserved.  </p>
+    </div>
+</div>
+
+
+
+<!--make the button of skills exp edu-->
+<script>
+
+    var tablinksa = document.getElementsByClassName("tablinks");
+    var tabcontentsa = document.getElementsByClassName("tabcontents");
+    
+    function opentab(tabname){
+        for(tablink of tablinksa){
+            tablink.classList.remove("activelink");
+        }
+        for(tabcontent of tabcontentsa){
+            tabcontent.classList.remove("activetab");
+        }
+        event.currentTarget.classList.add("activelink")
+        document.getElementById(tabname).classList.add("activetab")
+    }
+
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+
+<form name="submit-to-google-sheet"></form>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzfjj19vIorApAzKrNdJubXKfi5Yldm8kgq8-nC-gbIUHH6FRRzX0oeYm5wyqmDk3Il/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message Sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>

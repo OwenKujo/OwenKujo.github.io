@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppons',sans-serif;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+/*down here is background*/
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/other\ bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+
+}
+/*down here is the bar*/
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    background:rgb(74, 173, 235);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.headertext{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.headertext h1{
+    font-size: 60px;
+    margin-top: 20 px;
+}
+.headertext h1 span{
+    color: lightskyblue;
+}
+/*--------------------about---------------*/
+#about{
+    padding: 80px 0;
+    color: rgb(255, 255, 255);
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about1{
+    width: 35%;
+}
+.about1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about2{
+    flex-basis: 60%;
+}
+.sub{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-tittles{
+    display: flex;
+    margin: 20px 0 40px;
+    
+    
+}
+.tab-tittles p{
+    font-weight: 1000;
+}
+.tablinks{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tablinks::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    background-color: rgb(115, 188, 234);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tablinks.activelink::after{
+    width: 80%;
+}
+.tabcontents ul li{
+    list-style: none;
+    margin: 12px 0;
+}
+.tabcontents ul li span{
+    color: rgb(115, 188, 234);
+    font-size:18px;
+    font-weight: 600;
+}
+.tabcontents{
+    display: none;
+}
+.tabcontents.activetab{
+    display: block;
+}
+
+/*---------------my project----------*/
+#services{
+    padding: 30px 0;
+}
+.serviceslist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+#myproject{
+    padding: 50px 0;
+}
+.myprojects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.project{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.project img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition:transfrom 0.7s ;
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),rgb(44, 104, 142));
+    border-radius: 16px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 15px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: rgb(74, 173, 235);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: rgb(255, 255, 255);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.project:hover img{
+    transform: scale(1.1);
+}
+.project:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 2px solid rgb(74, 173, 235);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: rgb(74, 173, 235);
+}
+/*--------------------cotact section------------*/
+.contactleft{
+    flex-basis: 35%;
+}
+.contactright {
+    flex-basis: 60%;
+}
+.contactleft p{
+    margin-top: 30px;
+
+}
+.contactleft p i{
+    margin-right: 15px;
+    font-size: 30px;
+}
+.socialmedia{
+    margin-top: 30px;
+}
+.socialmedia a{
+    text-decoration: none;
+    font-size: 50px;
+    margin-right: 15px;
+    color: ghostwhite;
+    display: inline-block;
+    transition: tramsform 0.5s;
+}
+.socialmedia a:hover{
+    color: rgb(74, 173, 235);
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background:rgb(74, 173, 235)
+}
+.contactright form{
+    width: 100%;
+}
+for, input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background:darkgray;
+    padding: 15px;
+    margin: 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 300;
+    background: #262626;
+    margin-top: 20px;
+}
+/*----------------------respsnsive part baby-----------------*/
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width:600px){
+    #header{
+        background-image: url(images/phonebackground.png);
+    }
+    .headertext{
+        margin-top: 50%;
+        font-size: 16px;
+    }
+    .headertext h1{
+        font-size: 28.5px;
+    }
+        nav .fa-sharp {
+            display: block;
+            font-size: 25px;
+            
+        }
+        nav .fa-solid{
+            display: block;
+            font-size: 25px;
+        }
+        nav ul{
+            background:rgb(44, 104, 142) ;
+            position: fixed;
+            top: 0;
+            right: -200px;
+            width: 200px;
+            height: 200vh;
+            padding-top: 50px;
+            z-index: 2;
+            transition: right 0.5s;
+        }
+        nav ul li{
+            display: block;
+            margin: 25px;
+        }
+        nav ul .fa-solid{
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            cursor: pointer;
+            font-size: 30px;
+            
+        }nav ul .fa-sharp {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+        font-size: 30px;
+        }
+        .sub{
+            font-size: 40px;
+        }
+        .about1, .about2{
+            flex-basis: 100%;
+        }
+        .about1{
+            margin-bottom: 30px;
+        }
+        .about2{
+            font-size: 14px;
+        }
+        .tablinks{
+            font-size: 15px;
+            margin-right: 20px;
+        }
+        .contactleft, .contactright{
+            flex-basis: 100%;
+        }
+        .copyright{
+            font-size: 13px;
+        }
+}
+#msg{
+    color:rgb(74, 173, 235) ;
+    margin-top: -40px;
+    display: block;
+}

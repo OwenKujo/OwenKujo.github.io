@@ -14,19 +14,20 @@
 <div id="header">
     <div class="container">
         <nav>
-            <img src="images/Logo web.png" alt="logo">
+            <img src="images/Logo web.png" class="logo">
             <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#myproject">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#header"><h2>Home</h2></a></li>
+                <li><a href="#about"><h2>About</h2</a></li>
+                <li><a href="#award"><h2>Awards</h2</a></li>
+                <li><a href="#myproject"><h2>Project</h2></a></li>
+                <li><a href="#contact"><h2>Contact</h2></a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
             <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="headertext">
-            <p>Interested in Data Science</p>
-            <h1>Hello, I'm Rapeepat Promlat<br> from Thailand<br>You can call me<span> Owen</span></h1>
+            <p>Interested in Data Science and Computer Science</p>
+            <h1>Hello, I'm Rapeepat Promlat<br> from Thailand. <br>You can call me<span> Owen</span></h1>
         </div>
     </div>
 </div>
@@ -84,39 +85,46 @@
         </div>
     </div>
 </div>
-<!---------------------award----------------->
 
-<div id="myaward">
-    <div class="container">
+<!---------------------awardv2.1----------------->
+<div id="award">
+    <div class="awardcontainer">
         <h1 class="sub">Awards</h1>
-        <div class="awards">
-            <div class="myawards">
+        <div class="row1">
+            <div class="myaward">
                 <img src="images/award-1.png">
-                <div class="layer">
-                    <h3>1St Runner Up of River Hack by Environhack <br>Project Warn by team เด็กโขง</h3>
-                    <p>Warn is the platform that that will helps
-                    local people in Mekong River area get the real time warning and a prediction
-                    of water levels changing (Chinese dam drain off the water without warning)in the Line Chat Bot, SMS 
-                    and P.A. announcement in the community.
-                    </p>
-                    <a href="https://www.canva.com/design/DAFUWYMTsxI/xJEn00ZA5_o3JKkgdEYjUw/view?utm_content=DAFUWYMTsxI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"><i class="fas fa-external-link-alt"></i></a>
-                </div>
             </div>
-            <div class="myawards">
+            <div class="myaward1">
+                <h5 class="suba">1St Runner Up of River Hack by Environhack</h5>
+                <p class="l">
+                    In the hackathon called River Hack my team(team เด็กโขง) were the 2nd place.
+                    We built the project Warn. It is the warning system and machine learning project that will helps
+                    local people in Mekong River area get the real time warning and a prediction
+                    of water levels changing in the Line Chat Bot, SMS and P.A. announcement the community.
+                    I was an engineer in the team.
+                </p>
+                <a
+                    href="https://www.canva.com/design/DAFUWYMTsxI/xJEn00ZA5_o3JKkgdEYjUw/view?utm_content=DAFUWYMTsxI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"class="button">Learn More</a>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="myaward2">
                 <img src="images/award-2.png">
-                <div class="layer">
-                    <h3>Gold Medal in Impromtu Speech Contest</h3>
-                    <p>As a representative of Watkhemapirataram School
-                        I recieved gold medal by the 6th place in the Impromtu Speech Contest
-                        in the topic of Pros and Cons of Cultural Globalisation.
-                    </p>
-                    <a href="https://central70.sillapa.net/sm-nbi1/result/local/sm-nbi1_comp-694.htm"><i
-                            class="fas fa-external-link-alt"></i></a>
-                </div>
+            </div>
+            <div class="myaward21">
+                <h5 class="suba1">Gold Medal in the Impomptu <br>Speech Contest</h5>
+                <p class="u">
+                    As a representative of Watkhemapirataram School
+                    I recieved gold medal by the 6th place in the Impromtu Speech Contest
+                    in the topic of Pros and Cons of Cultural Globalisation
+                </p>
+                <a href="https://central70.sillapa.net/sm-nbi1/result/local/sm-nbi1_comp-694.htm"
+                    class="button1">Learn More</a>
             </div>
         </div>
     </div>
 </div>
+
 <!---------------------my project----------------->
 
 <div id="myproject">
@@ -148,7 +156,7 @@
                 <img src="images/work-3.png">
                 <div class="layer">
                     <h2>Warn</h2>
-                    <h3>Warming system and AI to help Mekong River local</h3>
+                    <h5>Warming system and AI to help Mekong River</h5>
                     <p>Warn was built by my team (team เด็กโขง) in the River Hack. It is the platform that that will helps
                     local people in Mekong River area get the real time warning and a prediction
                     of water levels changing in the Line Chat Bot, SMS and P.A. announcement the community.
@@ -196,7 +204,7 @@
 
 
 
-<!--make the button of skills exp edu-->
+<!--make the button of skills act edu-->
 <script>
 
     var tablinksa = document.getElementsByClassName("tablinks");

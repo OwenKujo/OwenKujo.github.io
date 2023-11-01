@@ -444,7 +444,7 @@ nav .fa-solid{
 }
 @media only screen and (max-width:600px){
     #header{
-        background-image: url(images\phonebackground.png);
+        background-image: url(images/phone1.png);
     }
     .headertext{
         margin-top: 30%;
@@ -499,6 +499,9 @@ nav .fa-solid{
         }
         .about1, .about2{
             flex-basis: 100%;
+        }
+        .about1 img{
+            margin-bottom: 20px;
         }
         .about1{
             margin-bottom: 10px;
